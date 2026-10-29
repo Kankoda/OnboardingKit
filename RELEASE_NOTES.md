@@ -13,63 +13,37 @@ These release notes only cover the current major version.
 
 
 
+## 0.2
+
+This renames and polishes some types, and adds a new feature page.
+
+### 🎟️ License
+
+* `OnboardingApp` is a new view that can be used to register a license.
+
+### 💡 Onboardings
+
+* `Onboarding.Sequence` is a new type that presents the next onboarding in a list.
+* `Onboarding.tryPresent(after:action:)` now provides the onboarding to the action.
+
+### ➡️ Flows
+
+* `OnboardingPageView` has been renamed to `OnboardingPageFlow`.
+
+### 📺 Screens
+
+* `OnboardingCoverScreen` is a new launch screen with a full-screen background.
+* `OnboardingPromoScreen` is a new screen that can promote a feature or an offer.
+* `OnboardingWelcomeScreen` can be leading-aligned with `.onboardingWelcomeScreenAlignment(.leading)`.
+
+## ✅ USPs
+
+* `OnboardingUspList` can be created with a custom content builder.
+
+
+
 ## 0.1
 
 This is the first OnboardingKit beta release, to verify that everything works.
 
 This version adds models, views, documentation, etc.
-
-### Essentials
-
-* Onboarding
-* Onboarding.Conditional
-* Onboarding.CorrectBehavior
-* Onboarding.Delayed
-* Onboarding.WhatsNew
-* OnboardingPage
-* OnboardingPageInfo
-* OnboardingPageState
-
-### Flows
-
-* OnboardingPageView
-* OnboardingPageViewStyle
-* OnboardingSlideshow
-* OnboardingSlideshowConfiguration
-* OnboardingSlideshowProgressView
-* OnboardingSlideshowStyle
-
-### Intro
-
-* OnboardingIntroScreen
-* OnboardingIntroStyle
-* OnboardingIntroView
-
-### Licenses
-
-* OnboardingLicense
-* OnboardingLicenseView
-
-### USPs
-
-* OnboardingUsp
-* OnboardingUspList
-* OnboardingUspListItem
-* OnboardingUspListItemStyle
-
-### Views
-
-* OnboardingPageContent
-* OnboardingPageContentStyle
-* OnboardingPrimaryButton
-* OnboardingPrimaryButtonType
-* OnboardingVerticalProgressList
-* OnboardingVerticalProgressListStyle
-
-### What's New
-
-* OnboardingWhatsNew
-* OnboardingWhatsNewInfo
-* OnboardingWhatsNewScreen
-* OnboardingWhatsNewStyle
-* OnboardingWhatsNewView
