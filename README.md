@@ -28,7 +28,7 @@ OnboardingKit can be installed with the Swift Package Manager:
 https://github.com/Kankoda/OnboardingKit.git
 ```
 
-This package requires a license. You can sign up for a license from the [product website][Product] or the [online store][LicenseStore]. You can also use the "FREE" license key, as described in [getting-started guide][Getting-Started].
+This package requires a license to be used. You can sign up for a free or paid license from the [website][Website], then register it as described in the [getting-started guide][Getting-Started].
 
 
 
