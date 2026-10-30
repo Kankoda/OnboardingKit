@@ -40,7 +40,7 @@ You must first use your license to unlock the SDK:
 try await OnboardingKitLicense.register(.gumroad(licenseKey: "your-license-key"))
 ```
 
-You can also use the `OnboardingApp` view to automatically register your license, by placing it in your app root:
+You can also use the `OnboardingApp` wrapper view or the `.onboardingKitLicense(...)` modifier on your app's root view, to automatically register your license on app launch:
 
 ```swift
 @main
@@ -48,45 +48,60 @@ struct MyApp: App {
 
     var body: some Scene {
         WindowGroup {
-            OnboardingApp(.gumroad(licenseKey: "...")) {
-                ContentView()   // <- You app's main content view
-            }
+            ContentView()
+                .onboardingKitLicense(.gumroad(licenseKey: "..."))
         }
     }
 }
 ```
 
-Once your license is registered, you can create start creating and presenting onboarding experiences. See the [getting-started guide][Getting-Started] for more information.
+You can now start creating and presenting onboarding experiences in your app. See the [getting-started guide][Getting-Started] for more information and [this blog post][Post] for inspiration.
+
+
+### Onboarding types
+
+An `Onboarding` determines *when* an onboarding experience should be presented. You can use it to present a sheet, a modal, a popover, a flow, or anything you want. There are several types:
+
+* `regular` is presented right away, and only once.
+* `conditional` is presented when a condition returns `true`.
+* `delayed` is presented after a certain number of attempts.
+* `correctBehavior` is used to establish a desired behavior, by presenting until the user gets it right.
+* `sequence` presents the first onboarding in a list that should be presented.
+* `whatsNew` is only presented if there are new items to tell the user about.
+
+To use one, just call `tryPresent`:
+
+```swift
+Onboarding.regular(id: "welcome").tryPresent { _ in
+    // Show a sheet, modal, popover, or anything you want.
+}
+```
+
+OnboardingKit keeps track of what the user has seen, so you don't have to.
 
 
 
-## Flows
+### Flows & Screens
 
 OnboardingKit has two onboarding flow containers - `OnboardingPageFlow` and a `OnboardingSlideshow` - that can be used to present a collection of pages.
 
-
-
-## Screens
-
 OnboardingKit also has various screen templates, like a `OnboardingWelcomeScreen`, `OnboardingWhatsNewScreen`, `OnboardingPromoScreen`, and `OnboardingCoverScreen`.
 
-<img src="Resources/Screenshots/OnboardingWelcomeScreen.png" alt="Welcome Screen" width="200" /> <img src="Resources/Screenshots/OnboardingWhatsNewScreen.png" alt="What's New Screen" width="200" /> <img src="Resources/Screenshots/OnboardingPromoScreen.png" alt="Promo Screen" width="200" /> <img src="Resources/Screenshots/OnboardingCoverScreen-NewPlaces.png" alt="Cover Screen" width="200" />
+<img src="Resources/Screenshots/OnboardingWelcomeScreen.png" alt="Welcome Screen" width="205" /> <img src="Resources/Screenshots/OnboardingWhatsNewScreen.png" alt="What's New Screen" width="205" /> <img src="Resources/Screenshots/OnboardingPromoScreen.png" alt="Promo Screen" width="205" /> <img src="Resources/Screenshots/OnboardingCoverScreen-NewPlaces.png" alt="Cover Screen" width="205" />
 
-These screens can be styled and customized to great extent.
+These screens can be styled and customized to great extent, and you can use them and their content as standalone views as well.
 
 
 
 ## Documentation
 
-The [online documentation][Documentation] has a thorough getting-started guide, detailed articles, code samples, etc.
+The [online documentation][Documentation] has a thorough getting-started guide, detailed feature articles, code samples, etc.
 
 
 
 ## Contact
 
-This package is developed by [Kankoda][Website] in Stockholm, Sweden.
-
-Feel free to [reach out][email] if you have any questions or feedback, or if you need support.
+This package is developed by [Kankoda][Website] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
 
 
 
@@ -108,3 +123,5 @@ This package requires a license to be used. You can sign up on the [product webs
 [LicenseStore]: https://kankoda.gumroad.com/onboardingkit
 
 [Getting-Started]: https://kankoda.github.io/OnboardingKit/documentation/onboardingkit/getting-started-article
+
+[Post]: https://danielsaidi.com/blog/2026/10/30/introducing-a-brand-new-onboardingkit
