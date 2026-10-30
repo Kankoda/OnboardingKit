@@ -40,7 +40,7 @@ You must first use your license to unlock the SDK:
 try await OnboardingKitLicense.register(.gumroad(licenseKey: "your-license-key"))
 ```
 
-You can also use the `OnboardingApp` wrapper view or the `.onboardingKitLicense(...)` modifier on your app's root view, to automatically register your license on app launch:
+You can also use the `.onboardingKitLicense(...)` modifier on your app's root view, to automatically register your license on app launch:
 
 ```swift
 @main
@@ -49,13 +49,16 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onboardingKitLicense(.gumroad(licenseKey: "..."))
+                .onboardingKitLicense(.gumroad(licenseKey: "...")) { result in
+                    // Optional result handler
+                }
         }
     }
 }
 ```
 
 You can now start creating and presenting onboarding experiences in your app. See the [getting-started guide][Getting-Started] for more information and [this blog post][Post] for inspiration.
+
 
 
 ### Onboarding types

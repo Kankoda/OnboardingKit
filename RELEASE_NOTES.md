@@ -13,13 +13,19 @@ These release notes only cover the current major version.
 
 
 
-## 0.2
+## 0.3
 
-This renames and polishes some types, and adds a new feature page.
+This version makes it easier to register a license.
 
 ### 🎟️ License
 
-* `OnboardingApp` is a new view that can be used to register a license.
+* `OnboardingKitLicenseModifier` is a new view modifier that can be used to register a license.
+
+
+
+## 0.2
+
+This renames and polishes some types, and adds a new feature page.
 
 ### 💡 Onboardings
 
@@ -34,6 +40,7 @@ This renames and polishes some types, and adds a new feature page.
 
 * `OnboardingCoverScreen` is a new launch screen with a full-screen background.
 * `OnboardingPromoScreen` is a new screen that can promote a feature or an offer.
+* `OnboardingWhatsNewScreen` now wraps an `OnboardingWelcomeScreen` by default.
 * `OnboardingWelcomeScreen` can be leading-aligned with `.onboardingWelcomeScreenAlignment(.leading)`.
 
 ## ✅ USPs
