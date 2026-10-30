@@ -104,7 +104,7 @@ The [online documentation][Documentation] has a thorough getting-started guide, 
 
 ## Contact
 
-This package is developed by [Kankoda][Website] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
+This package is developed by [Kankoda][Kankoda] in Stockholm, Sweden. Feel free to [reach out][email] if you have any questions or feedback, or if you need support integrating this package into your app.
 
 
 
@@ -115,16 +115,12 @@ This package requires a license to be used. You can sign up on the [product webs
 
 
 [Email]: mailto:info@kankoda.com
-[Website]: https://kankoda.com
-[Product]: https://kankoda.com/onboardingkit
-[Bluesky]: https://bsky.app/profile/kankoda.bsky.social
-[Mastodon]: https://techhub.social/@kankoda
-[Sponsors]: https://github.com/sponsors/danielsaidi
+[Kankoda]: https://kankoda.com
+[Website]: https://kankoda.com/onboardingkit
 
 [Documentation]: https://kankoda.github.io/OnboardingKit/
+[Getting-Started]: https://kankoda.github.io/OnboardingKit/documentation/onboardingkit/getting-started-article
 [License]: https://github.com/Kankoda/OnboardingKit/blob/master/LICENSE
 [LicenseStore]: https://kankoda.gumroad.com/onboardingkit
-
-[Getting-Started]: https://kankoda.github.io/OnboardingKit/documentation/onboardingkit/getting-started-article
 
 [Post]: https://danielsaidi.com/blog/2026/10/30/introducing-a-brand-new-onboardingkit
