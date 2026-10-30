@@ -20,7 +20,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/LicenseKit/LicenseKit.git",
-            exact: "2.3.1"
+            exact: "2.4.1"
         )
     ],
     targets: [
