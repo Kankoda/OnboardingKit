@@ -13,6 +13,17 @@ These release notes only cover the current major version.
 
 
 
+## 0.4
+
+This version makes the SDK dynamic, and adds new buttons.
+
+### ✨ Features
+
+* `OnboardingActionButtonGroup` is a new view. 
+* `OnboardingNextButton` is a new view. 
+* `OnboardingSettingsButton` is a new view. 
+
+
 ## 0.3
 
 This version makes it easier to register a license.
@@ -20,7 +31,7 @@ This version makes it easier to register a license.
 ### 🎟️ License
 
 * `OnboardingKitLicenseModifier` is a new view modifier that can be used to register a license.
-
+* `View` has a new `.onboardingKitLicense(...)` extension that calls this modifier in a clean way. 
 
 
 ## 0.2
