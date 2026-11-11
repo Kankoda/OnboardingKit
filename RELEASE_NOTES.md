@@ -13,6 +13,26 @@ These release notes only cover the current major version.
 
 
 
+## 0.4.1
+
+This patch makes "what's new" items be explicitly marked as viewed.
+
+### 💡 Onboardings
+
+* `Onboarding.WhatsNew` no longer marks items as viewed when it's presented.
+* `Onboarding.WhatsNew` is now presented each time it's triggered, until its items are marked as viewed.
+
+### 📺 Screens
+
+* `OnboardingWhatsNewScreen` now marks all items as viewed when it disappears.
+* `OnboardingWhatsNewScreen` now keeps listing its items after they're marked as viewed.
+
+### 🐛 Bug Fixes
+
+* `OnboardingWhatsNewScreen` no longer shows an empty list when it's presented by an `Onboarding.WhatsNew`.
+
+
+
 ## 0.4
 
 This version makes the SDK dynamic, and adds new buttons.
