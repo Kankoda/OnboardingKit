@@ -13,6 +13,12 @@ These release notes only cover the current major version.
 
 
 
+## 0.4.2
+
+This patch adds new licenses.
+
+
+
 ## 0.4.1
 
 This patch makes "what's new" items be explicitly marked as viewed.
