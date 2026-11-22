@@ -13,6 +13,12 @@ These release notes only cover the current major version.
 
 
 
+## 0.4.4
+
+This patch makes USP list item style align icons and texts.
+
+
+
 ## 0.4.3
 
 This patch makes USP list item style use icon fonts instead of sizes.
