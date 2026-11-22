@@ -26,8 +26,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OnboardingKit",
-            url: "https://github.com/Kankoda/OnboardingKit-Binaries/releases/download/0.4.2/OnboardingKit.zip",
-            checksum: "8e79d308787215077bb3f7df9eba99851ad5c2d71da26a2181c5d0256fe3a77b"
+            url: "https://github.com/Kankoda/OnboardingKit-Binaries/releases/download/0.4.3/OnboardingKit.zip",
+            checksum: "cf4179e63022c4de8e2c1544bcc03e06880e2b23284d44541eb050453c609418"
         ),
         .target(
             name: "OnboardingKitDependencies",

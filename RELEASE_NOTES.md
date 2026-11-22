@@ -13,9 +13,9 @@ These release notes only cover the current major version.
 
 
 
-## 0.4.2
+## 0.4.3
 
-This patch adds new licenses.
+This patch makes USP list item style use icon fonts instead of sizes.
 
 
 
